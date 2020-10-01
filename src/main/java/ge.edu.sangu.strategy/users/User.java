@@ -1,6 +1,6 @@
 package ge.edu.sangu.strategy.users;
 
-import ge.chalauri.strategy.interfaces.SocialMediaStrategy;
+import ge.edu.sangu.strategy.interfaces.SocialMediaStrategy;
 
 public class User {
 

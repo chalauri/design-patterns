@@ -1,9 +1,10 @@
 package ge.edu.sangu.strategy;
 
-import ge.chalauri.strategy.strategies.FacebookStrategy;
-import ge.chalauri.strategy.strategies.LinkedInStrategy;
-import ge.chalauri.strategy.strategies.TwitterStrategy;
-import ge.chalauri.strategy.users.User;
+
+import ge.edu.sangu.strategy.strategies.FacebookStrategy;
+import ge.edu.sangu.strategy.strategies.LinkedInStrategy;
+import ge.edu.sangu.strategy.strategies.TwitterStrategy;
+import ge.edu.sangu.strategy.users.User;
 
 public class Main {
 
