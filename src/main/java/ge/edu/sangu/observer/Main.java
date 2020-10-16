@@ -4,32 +4,27 @@ import ge.edu.sangu.observer.interfaces.Notification;
 import ge.edu.sangu.observer.notifications.EmailNotification;
 import ge.edu.sangu.observer.notifications.PhoneCallNotification;
 import ge.edu.sangu.observer.notifications.SmsNotification;
-import ge.edu.sangu.observer.observable.NewsChannel;
+import ge.edu.sangu.observer.observable.News;
+import ge.edu.sangu.observer.observable.SportNews;
+import ge.edu.sangu.observer.observable.WeatherNews;
 
 public class Main {
 
     public static void main(String[] args) {
-        NewsChannel channel = new NewsChannel();
+        News sportNews = new SportNews();
+        News weatherNews = new WeatherNews();
 
         Notification emailNotification = new EmailNotification();
         Notification smsNotification = new SmsNotification();
         Notification phoneCallNotification = new PhoneCallNotification();
 
-
         // Adding observers
-        channel.addObserver(emailNotification);
-        channel.addObserver(smsNotification);
-        channel.addObserver(phoneCallNotification);
+        sportNews.addObserver(smsNotification);
+        weatherNews.addObserver(emailNotification);
+        weatherNews.addObserver(phoneCallNotification);
 
         // Post news
-        channel.setNews("Today we have lecture in Design Patterns");
-
-        // Delete phoneCall notification
-        channel.removeObserver(phoneCallNotification);
-
-        System.out.println("After deletion of phoneCall notification");
-
-        // Post news
-        channel.setNews("Another message");
+        sportNews.setNews("Georgia won");
+        weatherNews.setNews("Today is sunny");
     }
 }

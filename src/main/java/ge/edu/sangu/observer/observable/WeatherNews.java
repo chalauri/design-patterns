@@ -5,15 +5,15 @@ import java.util.Set;
 
 import ge.edu.sangu.observer.interfaces.Notification;
 
-public class NewsChannel {
+public class WeatherNews implements News{
 
     private Set<Notification> observers;
 
-    public void addObserver(Notification observer) {
-       if(observers == null){
-           observers = new HashSet<>();
-       }
+    public WeatherNews(){
+        this.observers = new HashSet<>();
+    }
 
+    public void addObserver(Notification observer) {
         observers.add(observer);
     }
 
