@@ -1,19 +1,19 @@
 package ge.edu.sangu.strategy;
 
-import ge.edu.sangu.strategy.strategies.FacebookStrategy;
 import ge.edu.sangu.strategy.strategies.LinkedInStrategy;
 import ge.edu.sangu.strategy.strategies.TwitterStrategy;
-import ge.edu.sangu.strategy.users.User;
+import ge.edu.sangu.strategy.users.UserWithComposition;
 
 public class Main {
 
     public static void main(String[] args) {
-        User user = new User("username", "password");
 
-        user.postOnSocialMedia(new LinkedInStrategy());
+        UserWithComposition user = new UserWithComposition(new LinkedInStrategy());
+        user.postOnSocialMedia();
 
-        user.postOnSocialMedia(new TwitterStrategy());
+        System.out.println();
 
-        user.postOnSocialMedia(new FacebookStrategy());
+        user.setSocialMediaStrategy(new TwitterStrategy());
+        user.postOnSocialMedia();
     }
 }

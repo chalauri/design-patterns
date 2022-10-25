@@ -10,6 +10,6 @@ public class TwitterStrategy implements SocialMediaStrategy {
         post.append("\n");
         post.append("I am happy to join twitter");
 
-        System.out.println(post.toString());
+        System.out.println(post);
     }
 }

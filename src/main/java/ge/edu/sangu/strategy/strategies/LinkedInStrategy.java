@@ -10,6 +10,6 @@ public class LinkedInStrategy implements SocialMediaStrategy {
         post.append("\n");
         post.append("I am looking for new opportunities for Java developer. Please contact with me if you are hiring");
 
-        System.out.println(post.toString());
+        System.out.println(post);
     }
 }

@@ -10,6 +10,6 @@ public class FacebookStrategy implements SocialMediaStrategy {
         post.append("\n");
         post.append("This is my facebook post about recent news.");
 
-        System.out.println(post.toString());
+        System.out.println(post);
     }
 }
