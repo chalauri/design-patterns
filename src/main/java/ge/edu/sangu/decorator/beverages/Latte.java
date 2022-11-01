@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 import ge.edu.sangu.decorator.component.Beverage;
 
-public class Latte extends Beverage {
+public class Latte implements Beverage {
 
     private static final BigDecimal COST = BigDecimal.valueOf(1.35);
 

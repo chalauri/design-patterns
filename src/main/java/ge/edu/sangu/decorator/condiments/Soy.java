@@ -4,12 +4,13 @@ import java.math.BigDecimal;
 
 import ge.edu.sangu.decorator.component.Beverage;
 
-public class Soya extends CondimentDecorator {
+public class Soy implements CondimentDecorator {
 
     private static final BigDecimal COST = BigDecimal.valueOf(0.15);
+
     private Beverage beverage;
 
-    public Soya(Beverage beverage) {
+    public Soy(Beverage beverage) {
         this.beverage = beverage;
     }
 

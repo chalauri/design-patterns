@@ -4,9 +4,10 @@ import java.math.BigDecimal;
 
 import ge.edu.sangu.decorator.component.Beverage;
 
-public class Mocha extends CondimentDecorator {
+public class Mocha implements CondimentDecorator {
 
     private static final BigDecimal COST = BigDecimal.valueOf(0.25);
+
     private Beverage beverage;
 
     public Mocha(Beverage beverage) {

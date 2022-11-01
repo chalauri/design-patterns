@@ -4,9 +4,10 @@ import java.math.BigDecimal;
 
 import ge.edu.sangu.decorator.component.Beverage;
 
-public class Milk extends CondimentDecorator {
+public class Milk implements CondimentDecorator {
 
     private static final BigDecimal COST = BigDecimal.valueOf(0.35);
+
     private Beverage beverage;
 
     public Milk(Beverage beverage) {

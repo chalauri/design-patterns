@@ -2,12 +2,9 @@ package ge.edu.sangu.decorator.component;
 
 import java.math.BigDecimal;
 
-public abstract class Beverage {
-
-    private String description;
-
-    private BigDecimal cost;
+public interface Beverage {
 
     public abstract String getDescription();
+
     public abstract BigDecimal getCost();
 }
