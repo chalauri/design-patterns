@@ -44,7 +44,9 @@
                 <configuration>
                     <configLocation>config/checkstyle/checkstyle.xml</configLocation>
                     <consoleOutput>true</consoleOutput>
+                    <outputDirectory>target/checkstyle-report/</outputDirectory>
                     <failsOnError>true</failsOnError>
+                    <enableFilesSummary>true</enableFilesSummary>
                     <linkXRef>false</linkXRef>
                 </configuration>
                 <executions>
