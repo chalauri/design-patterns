@@ -5,11 +5,11 @@ import java.util.Set;
 
 import ge.edu.sangu.observer.interfaces.Notification;
 
-public class WeatherNews implements News{
+public class WeatherNews implements News {
 
     private Set<Notification> observers;
 
-    public WeatherNews(){
+    public WeatherNews() {
         this.observers = new HashSet<>();
     }
 
@@ -21,7 +21,7 @@ public class WeatherNews implements News{
         observers.remove(observer);
     }
 
-    public void setNews(String news){
+    public void setNews(String news) {
         observers.forEach(observer -> {
             observer.notify(news);
         });

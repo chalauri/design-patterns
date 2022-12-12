@@ -1,6 +1,11 @@
 package ge.edu.sangu.bridge;
 
-import ge.edu.sangu.bridge.implementations.*;
+import ge.edu.sangu.bridge.implementations.Blue;
+import ge.edu.sangu.bridge.implementations.Green;
+import ge.edu.sangu.bridge.implementations.Rectangle;
+import ge.edu.sangu.bridge.implementations.Red;
+import ge.edu.sangu.bridge.implementations.Square;
+import ge.edu.sangu.bridge.implementations.Triangle;
 import ge.edu.sangu.bridge.interfaces.Shape;
 
 import java.util.stream.IntStream;

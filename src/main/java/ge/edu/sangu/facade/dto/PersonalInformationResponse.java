@@ -22,10 +22,11 @@ public class PersonalInformationResponse {
 
     @Override
     public String toString() {
-        return "PersonalInformationResponse{" +
-            "firstName='" + firstName + '\'' +
-            ", lastName='" + lastName + '\'' +
-            ", personalNumber='" + personalNumber + '\'' +
-            '}';
+        return "PersonalInformationResponse{"
+            + "firstName='" + firstName + '\''
+            + ", lastName='" + lastName + '\''
+            + ", personalNumber='" + personalNumber
+            + '\''
+            + '}';
     }
 }

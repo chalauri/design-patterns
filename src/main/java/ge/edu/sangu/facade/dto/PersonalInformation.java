@@ -32,10 +32,10 @@ public class PersonalInformation {
 
     @Override
     public String toString() {
-        return "PersonalInformation{" +
-            "firstName='" + firstName + '\'' +
-            ", lastName='" + lastName + '\'' +
-            ", personalNumber='" + personalNumber + '\'' +
-            '}';
+        return "PersonalInformation{"
+            + "firstName='" + firstName + '\''
+            + ", lastName='" + lastName + '\''
+            + ", personalNumber='" + personalNumber + '\''
+            + '}';
     }
 }
