@@ -4,6 +4,7 @@ import ge.edu.sangu.flyweight.enums.Color;
 import ge.edu.sangu.flyweight.enums.TreeType;
 import ge.edu.sangu.flyweight.implementations.AppleTree;
 import ge.edu.sangu.flyweight.implementations.LemonTree;
+import ge.edu.sangu.flyweight.implementations.MangoTree;
 import ge.edu.sangu.flyweight.implementations.OrangeTree;
 import ge.edu.sangu.flyweight.interfaces.Tree;
 
@@ -40,9 +41,11 @@ public class TreeFactory {
                 System.out.println("Creating new object of OrangeTree");
                 return new OrangeTree();
             }
-            default -> {
-                throw new IllegalArgumentException("Illegal Tree Type");
+            case MANGO -> {
+                System.out.println("Creating new object of MangoTree");
+                return new MangoTree();
             }
+            default -> throw new IllegalArgumentException("Illegal Tree Type");
         }
     }
 }

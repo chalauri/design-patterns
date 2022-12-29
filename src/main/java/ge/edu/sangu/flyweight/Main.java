@@ -27,6 +27,6 @@ public class Main {
     }
 
     private static TreeType getRandomTreeType() {
-        return TREE_TYPES[(int) (Math.random() * COLORS.length)];
+        return TREE_TYPES[(int) (Math.random() * TREE_TYPES.length)];
     }
 }
