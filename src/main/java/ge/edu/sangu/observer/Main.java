@@ -1,9 +1,9 @@
 package ge.edu.sangu.observer;
 
-import ge.edu.sangu.observer.interfaces.Notification;
-import ge.edu.sangu.observer.notifications.EmailNotification;
-import ge.edu.sangu.observer.notifications.PhoneCallNotification;
-import ge.edu.sangu.observer.notifications.SmsNotification;
+import ge.edu.sangu.observer.interfaces.Subscriber;
+import ge.edu.sangu.observer.notifications.EmailSubscriber;
+import ge.edu.sangu.observer.notifications.PhoneCallSubscriber;
+import ge.edu.sangu.observer.notifications.SmsSubscriber;
 import ge.edu.sangu.observer.observable.News;
 import ge.edu.sangu.observer.observable.SportNews;
 import ge.edu.sangu.observer.observable.WeatherNews;
@@ -14,17 +14,23 @@ public class Main {
         News sportNews = new SportNews();
         News weatherNews = new WeatherNews();
 
-        Notification emailNotification = new EmailNotification();
-        Notification smsNotification = new SmsNotification();
-        Notification phoneCallNotification = new PhoneCallNotification();
+        Subscriber emailSubscriber = new EmailSubscriber();
+        Subscriber smsSubscriber = new SmsSubscriber();
+        Subscriber phoneCallSubscriber = new PhoneCallSubscriber();
 
         // Adding observers
-        sportNews.addObserver(smsNotification);
-        weatherNews.addObserver(emailNotification);
-        weatherNews.addObserver(phoneCallNotification);
+        sportNews.addObserver(smsSubscriber);
+        sportNews.addObserver(emailSubscriber);
+
+        weatherNews.addObserver(emailSubscriber);
+        weatherNews.addObserver(phoneCallSubscriber);
+        weatherNews.addObserver(smsSubscriber);
 
         // Post news
         sportNews.setNews("Georgia won");
         weatherNews.setNews("Today is sunny");
+
+        weatherNews.removeObserver(phoneCallSubscriber);
+        weatherNews.setNews("It started raining!!!");
     }
 }
