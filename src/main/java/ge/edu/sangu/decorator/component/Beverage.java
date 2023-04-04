@@ -4,7 +4,7 @@ import java.math.BigDecimal;
 
 public interface Beverage {
 
-    public abstract String getDescription();
+    String getDescription();
 
-    public abstract BigDecimal getCost();
+    BigDecimal getCost();
 }
