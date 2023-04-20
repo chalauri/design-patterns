@@ -28,7 +28,6 @@ public class WeatherNews implements News {
     @Override
     public void setNews(String news) {
         observers.forEach(observer -> {
-//            observer.notify(news);
             observer.notifyWithDateTime(new Message(Instant.now(), news));
         });
     }

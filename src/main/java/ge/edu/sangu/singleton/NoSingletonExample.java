@@ -14,7 +14,7 @@ public class NoSingletonExample {
     }
 
 
-    public static NoSingletonExample getInstance(){
+    public static NoSingletonExample getInstance() {
         if (FAKE_SINGLETON_OBJECT == null) {
             FAKE_SINGLETON_OBJECT = new NoSingletonExample();
         }

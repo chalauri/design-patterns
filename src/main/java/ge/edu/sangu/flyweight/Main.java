@@ -14,12 +14,12 @@ public class Main {
 
     public static void main(String[] args) {
 
-        IntStream.
-            range(0, 20)
-            .forEach(index -> {
-                Tree tree = TreeFactory.getTree(getRandomTreeType());
-                tree.fill(getRandomColor());
-            });
+        IntStream
+                .range(0, 20)
+                .forEach(index -> {
+                    Tree tree = TreeFactory.getTree(getRandomTreeType());
+                    tree.fill(getRandomColor());
+                });
     }
 
     private static Color getRandomColor() {

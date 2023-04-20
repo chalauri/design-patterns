@@ -16,11 +16,12 @@ public class Main {
 
         Subscriber emailSubscriber = new EmailSubscriber();
         Subscriber smsSubscriber = new SmsSubscriber();
-        Subscriber phoneCallSubscriber = new PhoneCallSubscriber();
 
         // Adding observers
         sportNews.addObserver(smsSubscriber);
         sportNews.addObserver(emailSubscriber);
+
+        Subscriber phoneCallSubscriber = new PhoneCallSubscriber();
 
         weatherNews.addObserver(emailSubscriber);
         weatherNews.addObserver(phoneCallSubscriber);
