@@ -1,8 +1,9 @@
 package ge.edu.sangu.iterator.channel;
 
 
-public class Channel {
+import java.util.Objects;
 
+public class Channel {
     private double frequency;
     private ChannelType channelType;
 
@@ -33,5 +34,18 @@ public class Channel {
                 "frequency=" + frequency +
                 ", channelType=" + channelType +
                 '}';
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Channel channel = (Channel) o;
+        return Double.compare(channel.frequency, frequency) == 0 && channelType == channel.channelType;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(frequency, channelType);
     }
 }

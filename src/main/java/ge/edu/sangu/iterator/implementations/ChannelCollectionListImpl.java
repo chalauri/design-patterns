@@ -8,11 +8,11 @@ import ge.edu.sangu.iterator.interfaces.ChannelIterator;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ArrayListChannelCollectionImpl implements ChannelCollection {
+public class ChannelCollectionListImpl implements ChannelCollection {
 
     private List<Channel> channelsList;
 
-    public ArrayListChannelCollectionImpl() {
+    public ChannelCollectionListImpl() {
         channelsList = new ArrayList<>();
     }
 
@@ -28,6 +28,6 @@ public class ArrayListChannelCollectionImpl implements ChannelCollection {
 
     @Override
     public ChannelIterator iterator(ChannelType channelType) {
-        return new ArrayListChannelIteratorImpl(channelType, channelsList);
+        return new ListChannelIteratorImpl(channelType, channelsList);
     }
 }

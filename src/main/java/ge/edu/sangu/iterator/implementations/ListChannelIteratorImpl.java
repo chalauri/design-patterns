@@ -6,13 +6,13 @@ import ge.edu.sangu.iterator.interfaces.ChannelIterator;
 
 import java.util.List;
 
-public class ArrayListChannelIteratorImpl implements ChannelIterator {
+public class ListChannelIteratorImpl implements ChannelIterator {
 
     private ChannelType channelType;
     private List<Channel> channels;
     private int position;
 
-    public ArrayListChannelIteratorImpl(ChannelType channelType, List<Channel> channels) {
+    public ListChannelIteratorImpl(ChannelType channelType, List<Channel> channels) {
         this.channelType = channelType;
         this.channels = channels;
     }
@@ -23,8 +23,9 @@ public class ArrayListChannelIteratorImpl implements ChannelIterator {
             Channel channel = channels.get(position);
             if (channel.getChannelType().equals(channelType) || channelType.equals(ChannelType.ALL)) {
                 return true;
-            } else
+            } else {
                 position++;
+            }
         }
         return false;
     }
