@@ -11,7 +11,6 @@ public class SingletonDemo {
         NotThreadSafeSingleton.getInstance();
         System.out.println("Not thread-safe object count = " + SingletonObjectCounter.NOT_THREAD_SAFE_COUNT);
 
-
         // Thread-safe
         for (int i = 0; i < 5; i++) {
             new Thread(new Runnable() {
@@ -27,5 +26,8 @@ public class SingletonDemo {
         // Some broken code
         NoSingletonExample.getInstance();
         System.out.println("NoSingletonExample count = " + SingletonObjectCounter.NO_SINGLETON_COUNT);
+
+        ItIsNotSingleton itIsNotSingletonObject = new ItIsNotSingleton(1);
+        System.out.println("Objects created = " + SingletonObjectCounter.OBJECT_COUNTER);
     }
 }

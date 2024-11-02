@@ -26,7 +26,7 @@ public class SportNews implements News {
     }
 
     @Override
-    public void setNews(String news) {
+    public void publishNewArticle(String news) {
         observers.forEach(observer -> {
             observer.notifyWithDateTime(new Message(Instant.now(), news));
         });
