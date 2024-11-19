@@ -9,12 +9,14 @@ import ge.edu.sangu.facade.interfaces.Facade;
 public class Main {
 
     public static void main(String[] args) {
-        Facade personalInformationFacade = new FacadeImpl(new PersonalInformationParser(), new FileReader());
+        PersonalInformationParser personalInformationParser = new PersonalInformationParser();
+
+        Facade personalInformationFacade = new FacadeImpl(personalInformationParser, new FileReader());
         System.out.println(personalInformationFacade.getPersonalInformation("SOME_FILE_DESTINATION"));
 
         System.out.println("\n");
 
-        Facade personalInformationFacadeFromDatabase = new FacadeImpl(new PersonalInformationParser(), new DatabaseReader());
+        Facade personalInformationFacadeFromDatabase = new FacadeImpl(personalInformationParser, new DatabaseReader());
         System.out.println(personalInformationFacadeFromDatabase.getPersonalInformation("SOME_FILE_DESTINATION"));
     }
 }
