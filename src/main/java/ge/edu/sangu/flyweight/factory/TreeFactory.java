@@ -1,6 +1,5 @@
 package ge.edu.sangu.flyweight.factory;
 
-import ge.edu.sangu.flyweight.enums.Color;
 import ge.edu.sangu.flyweight.enums.TreeType;
 import ge.edu.sangu.flyweight.implementations.AppleTree;
 import ge.edu.sangu.flyweight.implementations.LemonTree;

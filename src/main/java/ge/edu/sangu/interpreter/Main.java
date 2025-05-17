@@ -24,5 +24,26 @@ public class Main {
         Expression subtractionExpressionResult = new SubtractionExpression(additionalExpressionResult, divisionExpressionResult);
 
         System.out.println("Result = " + subtractionExpressionResult.interpret());
+
+
+        // 8 + 39/3 = 21
+        Expression expression = new AdditionExpression(
+                new NumberExpression(8),
+                new DivideExpression(new NumberExpression(39), new NumberExpression(3)));
+
+        System.out.println("Result = " + expression.interpret());
+
+        // 26 - 1.5 * 3 + 8 * 0.25 = 26 - 4.5 + 2 = 23.5
+        Expression secondExpression = new AdditionExpression(
+                new SubtractionExpression(
+                        new NumberExpression(26),
+                        new MultiplyExpression(new NumberExpression(1.5), new NumberExpression(3))
+                ),
+                new MultiplyExpression(
+                        new NumberExpression(8), new NumberExpression(0.25)
+                )
+        );
+
+        System.out.println("Result = " + secondExpression.interpret());
     }
 }

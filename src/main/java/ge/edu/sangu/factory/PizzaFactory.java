@@ -1,9 +1,6 @@
 package ge.edu.sangu.factory;
 
-import ge.edu.sangu.factory.implementations.ChicagoCheesePizza;
-import ge.edu.sangu.factory.implementations.ChicagoMushroomPizza;
-import ge.edu.sangu.factory.implementations.ChicagoVeggePizza;
-import ge.edu.sangu.factory.implementations.NewYorkCheesePizza;
+import ge.edu.sangu.factory.implementations.*;
 import ge.edu.sangu.factory.interfaces.Pizza;
 
 public class PizzaFactory {
@@ -14,7 +11,7 @@ public class PizzaFactory {
         }
 
         if ("chilli".equalsIgnoreCase(type)) {
-            return new NewYorkCheesePizza();
+            return new NewYorkChilliPizza();
         }
 
         throw new IllegalArgumentException(String.format("Pizza type %s Not supported", type));

@@ -12,7 +12,6 @@ public class NumberExpression implements Expression {
 
     @Override
     public double interpret() {
-
         return this.number;
     }
 }
