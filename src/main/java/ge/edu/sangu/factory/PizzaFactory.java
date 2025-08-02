@@ -1,6 +1,10 @@
 package ge.edu.sangu.factory;
 
-import ge.edu.sangu.factory.implementations.*;
+import ge.edu.sangu.factory.implementations.ChicagoCheesePizza;
+import ge.edu.sangu.factory.implementations.ChicagoMushroomPizza;
+import ge.edu.sangu.factory.implementations.ChicagoVeggePizza;
+import ge.edu.sangu.factory.implementations.NewYorkCheesePizza;
+import ge.edu.sangu.factory.implementations.NewYorkChilliPizza;
 import ge.edu.sangu.factory.interfaces.Pizza;
 
 public class PizzaFactory {

@@ -13,7 +13,7 @@ public class CitizenParametrized {
         this.birthDate = birthDate;
     }
 
-    public void setBirthDateBuilder(BirthDateBuilder builder){
+    public void setBirthDateBuilder(BirthDateBuilder builder) {
         this.abstractBuilder = builder;
     }
 

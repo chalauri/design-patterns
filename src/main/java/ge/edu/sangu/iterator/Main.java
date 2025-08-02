@@ -15,25 +15,9 @@ public class Main {
             System.out.println(c.toString());
         }
 
-        System.out.println("******");
-
-        // Channel Type Iterator
-//        ChannelIterator englishIterator = channels.iterator(ChannelType.ENGLISH);
-//        while (englishIterator.hasNext()) {
-//            Channel c = englishIterator.next();
-//            System.out.println(c.toString());
-//        }
 
         System.out.println("******");
 
-        // Channel Type Iterator
-        ChannelIterator spanishIterator = channels.iterator(ChannelType.SPANISH);
-//        while (spanishIterator.hasNext()) {
-//            Channel c = spanishIterator.next();
-//            System.out.println(c.toString());
-//        }
-
-        System.out.println("******");
         System.out.println("After removing one of Georgian channels");
         // Print after removing channel
         ChannelIterator georgianIterator = channels.iterator(ChannelType.GEORGIAN);
