@@ -1,4 +1,4 @@
-# Singleton Pattern Examples in Java (With Pitfalls and Fixes)
+# Singleton Pattern Examples in Java
 
 This package demonstrates different implementations (and misimplementations) of the **Singleton Design Pattern** in Java. The Singleton pattern ensures that a class has only one instance and provides a global point of access to it.
 
