@@ -1,4 +1,4 @@
-# Social Media Strategy Pattern (Java)
+# Strategy Pattern (Java)
 
 This package demonstrates the use of the **Strategy Design Pattern** in Java by modeling social media posting behaviors.
 
