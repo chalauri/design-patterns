@@ -9,7 +9,7 @@ import ge.edu.sangu.observer.model.Message;
 
 public class WeatherNews implements News {
 
-    private Set<Subscriber> observers;
+    private final Set<Subscriber> observers;
 
     public WeatherNews() {
         this.observers = new HashSet<>();

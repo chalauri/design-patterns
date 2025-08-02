@@ -2,17 +2,17 @@ package ge.edu.sangu.singleton;
 
 public class NotThreadSafeSingleton {
 
-    private static NotThreadSafeSingleton singletonObject;
+    private static NotThreadSafeSingleton SINGLETON_OBJECT;
 
     private NotThreadSafeSingleton() {
     }
 
     public static NotThreadSafeSingleton getInstance() {
-        if (singletonObject == null) {
-            singletonObject = new NotThreadSafeSingleton();
+        if (SINGLETON_OBJECT == null) {
+            SINGLETON_OBJECT = new NotThreadSafeSingleton();
             SingletonObjectCounter.NOT_THREAD_SAFE_COUNT++;
         }
 
-        return singletonObject;
+        return SINGLETON_OBJECT;
     }
 }

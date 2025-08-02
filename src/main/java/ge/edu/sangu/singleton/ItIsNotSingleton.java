@@ -6,7 +6,7 @@ public class ItIsNotSingleton {
         SingletonObjectCounter.OBJECT_COUNTER++;
     }
 
-    public ItIsNotSingleton(int a){
+    public ItIsNotSingleton(int anyParameter){
         SingletonObjectCounter.OBJECT_COUNTER++;
         new ItIsNotSingleton();
     }

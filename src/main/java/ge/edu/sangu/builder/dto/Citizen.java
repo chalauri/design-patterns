@@ -7,7 +7,7 @@ import java.time.LocalDate;
 public class Citizen {
 
     private String birthDate;
-    private BirthDateBuilder abstractBuilder;
+    private final BirthDateBuilder abstractBuilder;
 
     public Citizen(BirthDateBuilder abstractBuilder) {
         this.abstractBuilder = abstractBuilder;

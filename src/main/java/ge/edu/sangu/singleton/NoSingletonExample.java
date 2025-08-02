@@ -9,7 +9,7 @@ public class NoSingletonExample {
         new NoSingletonExample(1);
     }
 
-    private NoSingletonExample(int a) {
+    private NoSingletonExample(int anyParameter) {
         SingletonObjectCounter.NO_SINGLETON_COUNT++;
     }
 

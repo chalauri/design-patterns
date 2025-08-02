@@ -6,7 +6,7 @@ import java.time.LocalDate;
 
 public class CitizenParametrized {
 
-    private LocalDate birthDate;
+    private final LocalDate birthDate;
     private BirthDateBuilder abstractBuilder;
 
     public CitizenParametrized(LocalDate birthDate) {

@@ -9,7 +9,7 @@ import ge.edu.sangu.observer.model.Message;
 
 public class SportNews implements News {
 
-    private Set<Subscriber> observers;
+    private final Set<Subscriber> observers;
 
     public SportNews() {
         this.observers = new HashSet<>();
@@ -27,8 +27,6 @@ public class SportNews implements News {
 
     @Override
     public void publishNewArticle(String news) {
-        observers.forEach(observer -> {
-            observer.notifyWithDateTime(new Message(Instant.now(), news));
-        });
+        observers.forEach(observer -> observer.notifyWithDateTime(new Message(Instant.now(), news)));
     }
 }

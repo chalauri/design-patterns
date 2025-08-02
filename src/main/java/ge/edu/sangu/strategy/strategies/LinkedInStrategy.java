@@ -6,10 +6,6 @@ public class LinkedInStrategy implements SocialMediaStrategy {
 
     @Override
     public void post() {
-        StringBuilder post = new StringBuilder("Hello my friends, ");
-        post.append("\n");
-        post.append("I am looking for new opportunities for Java developer. Please contact with me if you are hiring");
-
-        System.out.println(post);
+        System.out.println("I am looking for new opportunities for Java developer. Please contact with me if you are hiring");
     }
 }

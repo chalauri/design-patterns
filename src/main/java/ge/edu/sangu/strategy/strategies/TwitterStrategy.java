@@ -6,10 +6,6 @@ public class TwitterStrategy implements SocialMediaStrategy {
 
     @Override
     public void post() {
-        StringBuilder post = new StringBuilder("Hello my friends, ");
-        post.append("\n");
-        post.append("I am happy to join twitter");
-
-        System.out.println(post);
+        System.out.println("Hello my friends, I am happy to join twitter");
     }
 }

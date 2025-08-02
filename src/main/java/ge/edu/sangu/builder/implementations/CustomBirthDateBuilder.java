@@ -26,12 +26,10 @@ public class CustomBirthDateBuilder implements BirthDateBuilder {
 
     @Override
     public String buildBirthData(LocalDate localDate) {
-        return new StringBuilder()
-                .append(localDate.getYear())
-                .append(" წლის ")
-                .append(localDate.getDayOfMonth())
-                .append(" ")
-                .append(MONTHS.get(localDate.getMonthValue()))
-                .toString();
+        return localDate.getYear() +
+                " წლის " +
+                localDate.getDayOfMonth() +
+                " " +
+                MONTHS.get(localDate.getMonthValue());
     }
 }
