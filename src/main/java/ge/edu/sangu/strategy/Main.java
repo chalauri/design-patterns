@@ -6,21 +6,11 @@ import ge.edu.sangu.strategy.strategies.TwitterStrategy;
 import ge.edu.sangu.strategy.users.UserWithComposition;
 
 import java.io.BufferedReader;
-import java.io.IOException;
 import java.io.InputStreamReader;
 
 public class Main {
 
     public static void main(String[] args) throws Exception {
-
-//        UserWithComposition user = new UserWithComposition(new LinkedInStrategy());
-//        user.postOnSocialMedia();
-//
-//        System.out.println(" ALERT!!! Strategy Changed !!!");
-//
-//        user.setSocialMediaStrategy(new TwitterStrategy());
-//        user.postOnSocialMedia();
-
 
         BufferedReader reader = new BufferedReader(
                 new InputStreamReader(System.in));

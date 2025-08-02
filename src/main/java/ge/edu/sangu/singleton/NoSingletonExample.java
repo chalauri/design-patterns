@@ -21,6 +21,4 @@ public class NoSingletonExample {
 
         return FAKE_SINGLETON_OBJECT;
     }
-
-
 }

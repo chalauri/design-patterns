@@ -10,5 +10,4 @@ public class ItIsNotSingleton {
         SingletonObjectCounter.OBJECT_COUNTER++;
         new ItIsNotSingleton();
     }
-
 }
