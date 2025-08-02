@@ -6,8 +6,8 @@ This is the examples of design patterns for educational reason. The course is de
 
 
 ## Patterns:
-1) [Strategy](https://github.com/chalauri/design-patterns/tree/master/src/main/java/ge/edu/sangu/strategy)
-2) [Singleton](https://github.com/chalauri/design-patterns/tree/master/src/main/java/ge/edu/sangu/singleton)
-3) [Observer](https://github.com/chalauri/design-patterns/tree/master/src/main/java/ge/edu/sangu/observer)
-4) [Builder](https://github.com/chalauri/design-patterns/tree/master/src/main/java/ge/edu/sangu/builder)
+1) [Strategy](./src/main/java/ge/edu/sangu/strategy)
+2) [Singleton](./src/main/java/ge/edu/sangu/singleton)
+3) [Observer](./src/main/java/ge/edu/sangu/observer)
+4) [Builder](./src/main/java/ge/edu/sangu/builder)
  
